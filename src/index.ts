@@ -4,6 +4,6 @@ import { isNormalNat } from "./isNormalNat";
   const isNN = await isNormalNat();
   const el = document.querySelector(".nat");
   if (el instanceof HTMLElement) {
-    el.innerText = isNN ? "Normal NAT" : "Symmetric NAT";
+    el.innerText = isNN ? "Non-Symmetric NAT" : "Symmetric NAT";
   }
 })();
